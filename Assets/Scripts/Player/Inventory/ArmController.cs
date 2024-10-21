@@ -78,7 +78,7 @@ namespace Player
                 throw new ArgumentNullException("Man, this item is not usable...");
             _usableItem.Use();
         }
-
+        
         private void OnDrawGizmos()
         {
             Gizmos.DrawRay(transform.position, transform.forward * _config.Distance);
